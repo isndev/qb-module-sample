@@ -17,7 +17,7 @@ namespace qbm {
                 Sample() = default;
                 virtual bool onInit() override final {
                     registerEvent<event::input>(*this);
-                    LOG_INFO << "Loaded Module Sample Actor";
+                    LOG_INFO("Loaded Module Sample Actor");
                     return true;
                 }
 

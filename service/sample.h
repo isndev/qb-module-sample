@@ -18,7 +18,7 @@ namespace qbm {
                 Sample() = default;
                 virtual bool onInit() override final {
                     registerEvent<event::input>(*this);
-                    LOG_INFO << "Loaded Module Sample Service";
+                    LOG_INFO("Loaded Module Sample Service");
                     return true;
                 }
 

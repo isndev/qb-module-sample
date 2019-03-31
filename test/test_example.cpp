@@ -36,7 +36,7 @@ TEST(Example, TestSampleActorOutput) {
 TEST(Example, TestSampleServiceOutput) {
     qb::Main main({0});
 
-    auto id = main.addActor<qbm::sample::actor::Sample>(0);
+    auto id = main.addActor<qbm::sample::service::Sample>(0);
     main.addActor<TestActor>(0, id);
 
     main.start();
