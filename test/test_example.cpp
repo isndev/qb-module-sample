@@ -6,7 +6,7 @@
 class TestActor : public qb::Actor {
     qb::ActorId _to;
 public:
-    TestActor(qb::ActorId const to)
+    explicit TestActor(qb::ActorId const to)
             : _to(to ? to : getServiceId<qbm::sample::service::Tag>(0))
     {}
 
